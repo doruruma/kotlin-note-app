@@ -17,7 +17,7 @@ fun Navigation(navController: NavHostController) {
         startDestination = Screen.NotesScreen.route
     ) {
         composable(route = Screen.NotesScreen.route) {
-            NotesScreen()
+            NotesScreen(navController = navController)
         }
     }
 }
